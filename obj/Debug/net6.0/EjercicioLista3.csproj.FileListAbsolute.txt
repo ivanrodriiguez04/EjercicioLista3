@@ -1,0 +1,14 @@
+C:\Users\csi22-irodhan\Desktop\Programacion\EjercicioLista3\bin\Debug\net6.0\EjercicioLista3.exe
+C:\Users\csi22-irodhan\Desktop\Programacion\EjercicioLista3\bin\Debug\net6.0\EjercicioLista3.deps.json
+C:\Users\csi22-irodhan\Desktop\Programacion\EjercicioLista3\bin\Debug\net6.0\EjercicioLista3.runtimeconfig.json
+C:\Users\csi22-irodhan\Desktop\Programacion\EjercicioLista3\bin\Debug\net6.0\EjercicioLista3.dll
+C:\Users\csi22-irodhan\Desktop\Programacion\EjercicioLista3\bin\Debug\net6.0\EjercicioLista3.pdb
+C:\Users\csi22-irodhan\Desktop\Programacion\EjercicioLista3\obj\Debug\net6.0\EjercicioLista3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\csi22-irodhan\Desktop\Programacion\EjercicioLista3\obj\Debug\net6.0\EjercicioLista3.AssemblyInfoInputs.cache
+C:\Users\csi22-irodhan\Desktop\Programacion\EjercicioLista3\obj\Debug\net6.0\EjercicioLista3.AssemblyInfo.cs
+C:\Users\csi22-irodhan\Desktop\Programacion\EjercicioLista3\obj\Debug\net6.0\EjercicioLista3.csproj.CoreCompileInputs.cache
+C:\Users\csi22-irodhan\Desktop\Programacion\EjercicioLista3\obj\Debug\net6.0\EjercicioLista3.dll
+C:\Users\csi22-irodhan\Desktop\Programacion\EjercicioLista3\obj\Debug\net6.0\refint\EjercicioLista3.dll
+C:\Users\csi22-irodhan\Desktop\Programacion\EjercicioLista3\obj\Debug\net6.0\EjercicioLista3.pdb
+C:\Users\csi22-irodhan\Desktop\Programacion\EjercicioLista3\obj\Debug\net6.0\EjercicioLista3.genruntimeconfig.cache
+C:\Users\csi22-irodhan\Desktop\Programacion\EjercicioLista3\obj\Debug\net6.0\ref\EjercicioLista3.dll
