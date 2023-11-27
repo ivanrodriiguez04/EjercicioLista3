@@ -12,7 +12,7 @@ namespace EjercicioLista3
     {
         /// <summary>
         /// Metodo principal de la apliacion
-        /// 20/11/2023 -> irm
+        /// 21/11/2023 -> irm
         /// </summary>
         /// <param name="args"></param>
         static void Main(string[] args)
@@ -54,6 +54,9 @@ namespace EjercicioLista3
                         {
                            Console.WriteLine(cuenta.ToString());
                         }*/
+                        break;
+                    case 3:
+                        mL.modificarCliente(listaCliente);
                         break;
                     default:
                         Console.WriteLine("[INFO] - La opcion seleccionada no coincide con ninguna.");
