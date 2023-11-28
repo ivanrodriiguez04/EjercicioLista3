@@ -18,29 +18,6 @@ namespace EjercicioLista3.Servicios
             ClienteDto nuevoCliente = crearCliente();
             listaClienteAntigua.Add(nuevoCliente);
         }
-
-        public void darAltaCuenta(List<CuentaDto> listaCuentaAntigua)
-        {
-            CuentaDto nuevaCuenta = crearCuenta();
-            listaCuentaAntigua.Add(nuevaCuenta);
-        }
-
-        public void modificarCliente(List<ClienteDto> listaClienteAntigua)
-        {
-            //Creamos un objeto para poder mostrar el menu de moficicacion
-            MenuModificacionesInterfaz mM = new MenuModificacionesImplementacion();
-
-            ClienteDto antiguoCliente = new ClienteDto();
-            string dni = pedirDNI();
-            foreach (ClienteDto cliente in listaClienteAntigua) 
-            {
-                if (dni == antiguoCliente.DniCliente) 
-                { 
-                    
-                }
-            }
-        }
-
         /// <summary>
         /// Metodo en el cual se pide toda la informacion necesario del cliente
         /// 20/11/2023 -> irm
@@ -71,7 +48,12 @@ namespace EjercicioLista3.Servicios
             nuevoCliente.FchBajaCliente = Console.ReadLine();
             return nuevoCliente;
         }
-        
+
+        public void darAltaCuenta(List<CuentaDto> listaCuentaAntigua)
+        {
+            CuentaDto nuevaCuenta = crearCuenta();
+            listaCuentaAntigua.Add(nuevaCuenta);
+        }
         /// <summary>
         /// Metodo que pide al usuario toda la informacion necesaria de la cuenta
         /// 20/11/2023 -> irm
@@ -95,6 +77,65 @@ namespace EjercicioLista3.Servicios
             return nuevaCuenta;
         }
 
+        public void modificarCliente(List<ClienteDto> listaClienteAntigua)
+        {
+            ClienteDto antiguoCliente = new ClienteDto();
+            string dni = pedirDNI();
+            bool cerrarMenu=false;
+            int opcionIntroducida;
+            foreach (ClienteDto cliente in listaClienteAntigua) 
+            {
+                if (dni == antiguoCliente.DniCliente) 
+                { 
+                    while (!cerrarMenu) 
+                    {
+                        opcionIntroducida=mostrarMenuModificacionesYSeleccion();
+                        switch (opcionIntroducida) 
+                        {
+                            case 0:
+                                Console.WriteLine("[INFO] - No se va ha modificar ningun dato");
+                                Console.WriteLine("[INFO] - Se va a cerrar la opcion seleccionada");
+                                cerrarMenu = true;
+                                break;
+                            case 1:
+                                Console.WriteLine("[INFO] - Ha seleccionado modificar el nombre");
+                                Console.WriteLine("Introduzca el nuevo nombre");
+                                antiguoCliente.NombreCliente = Console.ReadLine();
+                                break;
+                            case 2:
+                                Console.WriteLine("[INFO] - Ha seleccionado modificar los apellidos");
+                                Console.WriteLine("Introduzca los nuevos apellidos");
+                                antiguoCliente.ApellidosCliente = Console.ReadLine();
+                                break;
+                            case 3:
+                                Console.WriteLine("[INFO] - Ha seleccionado modificar el dni");
+                                Console.WriteLine("Introduzca el nuevo dni");
+                                antiguoCliente.DniCliente = Console.ReadLine();
+                                break;
+                            case 4:
+                                Console.WriteLine("[INFO] - Ha seleccionado modificar la fecha de nacimiento");
+                                Console.WriteLine("Introduzca la nueva fecha de nacimiento");
+                                antiguoCliente.FchNacimientoCliente = Console.ReadLine();
+                                break;
+                            case 5:
+                                Console.WriteLine("[INFO] - Ha seleccionado modificar el email");
+                                Console.WriteLine("Introduzca el nuevo email");
+                                antiguoCliente.EmailCliente = Console.ReadLine();
+                                break;
+                            case 6:
+                                Console.WriteLine("[INFO] - Ha seleccionado modificar el telefono");
+                                Console.WriteLine("Introduzca el nuevo telefono");
+                                antiguoCliente.TlfCliente=Convert.ToInt32(Console.ReadLine());
+                                break;
+                            default:
+                                Console.WriteLine("[INFO] - La opcion seleccionada no coincide con ninguna.");
+                                break;
+                        }
+                    
+                    }
+                }
+            }
+        }
         /// <summary>
         /// metodo que pide el dni del cliente a modificar al usuario
         /// 27/11/2023 -> irm
@@ -106,6 +147,24 @@ namespace EjercicioLista3.Servicios
             Console.WriteLine("Introduzca el dni del cliente a modificar:");
             dni= Console.ReadLine();
             return dni;
+        }
+        /// <summary>
+        /// Metodo que muestra el menu de modificacion y selecciona la opcion deseada por el usuario
+        /// 28/11/2023 -> irm
+        /// </summary>
+        /// <returns></returns>
+        private int mostrarMenuModificacionesYSeleccion()
+        {
+            int opcion;
+            Console.WriteLine("0. No quiero modificar nada");
+            Console.WriteLine("1. Modificar nombre");
+            Console.WriteLine("2. Modificar apellidos");
+            Console.WriteLine("3. Modificar dni");
+            Console.WriteLine("4. Modificar fecha de nacimiento");
+            Console.WriteLine("5. Modificar email");
+            Console.WriteLine("6. Modificar  telefono");
+            opcion = Convert.ToInt32(Console.ReadLine());
+            return opcion;
         }
 
     }

@@ -43,10 +43,10 @@ namespace EjercicioLista3
                     case 1:
                         Console.WriteLine("[INFO] - Ha seleccionado insertar un nuevo cliente");
                         mL.darAltaCliente(listaCliente);
-                        /*foreach (ClienteDto cliente in listaCliente) 
+                        foreach (ClienteDto cliente in listaCliente) 
                         {
                             Console.WriteLine(cliente.ToString());
-                        }*/
+                        }
                         break;
                     case 2:
                         mL.darAltaCuenta(listaCuenta);
@@ -57,6 +57,11 @@ namespace EjercicioLista3
                         break;
                     case 3:
                         mL.modificarCliente(listaCliente);
+                        foreach (ClienteDto cliente in listaCliente)
+                        {
+                            Console.WriteLine(cliente.ToString());
+                        }
+                        break;
                         break;
                     default:
                         Console.WriteLine("[INFO] - La opcion seleccionada no coincide con ninguna.");
