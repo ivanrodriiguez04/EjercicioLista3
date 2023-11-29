@@ -8,24 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\ivanr\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\csi22-irodhan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ivanr\\OneDrive\\Escritorio\\programacion 23-24\\EjercicioLista3\\EjercicioLista3.csproj",
+      "projectUniqueName": "C:\\Users\\csi22-irodhan\\Desktop\\Programacion\\EjercicioLista3\\EjercicioLista3.csproj",
       "projectName": "EjercicioLista3",
-      "projectPath": "C:\\Users\\ivanr\\OneDrive\\Escritorio\\programacion 23-24\\EjercicioLista3\\EjercicioLista3.csproj",
-      "packagesPath": "C:\\Users\\ivanr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ivanr\\OneDrive\\Escritorio\\programacion 23-24\\EjercicioLista3\\obj\\",
+      "projectPath": "C:\\Users\\csi22-irodhan\\Desktop\\Programacion\\EjercicioLista3\\EjercicioLista3.csproj",
+      "packagesPath": "C:\\Users\\csi22-irodhan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\csi22-irodhan\\Desktop\\Programacion\\EjercicioLista3\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\ivanr\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\csi22-irodhan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -66,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

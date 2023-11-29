@@ -62,7 +62,6 @@ namespace EjercicioLista3
                             Console.WriteLine(cliente.ToString());
                         }
                         break;
-                        break;
                     default:
                         Console.WriteLine("[INFO] - La opcion seleccionada no coincide con ninguna.");
                         break;

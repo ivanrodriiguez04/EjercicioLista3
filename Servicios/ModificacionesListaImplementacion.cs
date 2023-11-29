@@ -79,13 +79,12 @@ namespace EjercicioLista3.Servicios
 
         public void modificarCliente(List<ClienteDto> listaClienteAntigua)
         {
-            ClienteDto antiguoCliente = new ClienteDto();
             string dni = pedirDNI();
             bool cerrarMenu=false;
             int opcionIntroducida;
             foreach (ClienteDto cliente in listaClienteAntigua) 
             {
-                if (dni == antiguoCliente.DniCliente) 
+                if (cliente.DniCliente.Equals(dni)) 
                 { 
                     while (!cerrarMenu) 
                     {
@@ -100,32 +99,32 @@ namespace EjercicioLista3.Servicios
                             case 1:
                                 Console.WriteLine("[INFO] - Ha seleccionado modificar el nombre");
                                 Console.WriteLine("Introduzca el nuevo nombre");
-                                antiguoCliente.NombreCliente = Console.ReadLine();
+                                cliente.NombreCliente = Console.ReadLine();
                                 break;
                             case 2:
                                 Console.WriteLine("[INFO] - Ha seleccionado modificar los apellidos");
                                 Console.WriteLine("Introduzca los nuevos apellidos");
-                                antiguoCliente.ApellidosCliente = Console.ReadLine();
+                                cliente.ApellidosCliente = Console.ReadLine();
                                 break;
                             case 3:
                                 Console.WriteLine("[INFO] - Ha seleccionado modificar el dni");
                                 Console.WriteLine("Introduzca el nuevo dni");
-                                antiguoCliente.DniCliente = Console.ReadLine();
+                                cliente.DniCliente = Console.ReadLine();
                                 break;
                             case 4:
                                 Console.WriteLine("[INFO] - Ha seleccionado modificar la fecha de nacimiento");
                                 Console.WriteLine("Introduzca la nueva fecha de nacimiento");
-                                antiguoCliente.FchNacimientoCliente = Console.ReadLine();
+                                cliente.FchNacimientoCliente = Console.ReadLine();
                                 break;
                             case 5:
                                 Console.WriteLine("[INFO] - Ha seleccionado modificar el email");
                                 Console.WriteLine("Introduzca el nuevo email");
-                                antiguoCliente.EmailCliente = Console.ReadLine();
+                                cliente.EmailCliente = Console.ReadLine();
                                 break;
                             case 6:
                                 Console.WriteLine("[INFO] - Ha seleccionado modificar el telefono");
                                 Console.WriteLine("Introduzca el nuevo telefono");
-                                antiguoCliente.TlfCliente=Convert.ToInt32(Console.ReadLine());
+                                cliente.TlfCliente=Convert.ToInt32(Console.ReadLine());
                                 break;
                             default:
                                 Console.WriteLine("[INFO] - La opcion seleccionada no coincide con ninguna.");

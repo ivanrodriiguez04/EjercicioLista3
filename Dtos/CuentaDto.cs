@@ -41,7 +41,7 @@ namespace EjercicioLista3.Dtos
         public CuentaDto()
         {
         }
-
+        override
         //Metodo ToString
         public string ToString()
         {
