@@ -44,8 +44,8 @@ namespace EjercicioLista3.Servicios
             nuevoCliente.TlfCliente = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Introduzca la fecha del alta del cliente:");
             nuevoCliente.FchAltaCliente = Console.ReadLine();
-            Console.WriteLine("Introduzca la fecha de la baja del cliente:");
-            nuevoCliente.FchBajaCliente = Console.ReadLine();
+            //Console.WriteLine("Introduzca la fecha de la baja del cliente:");
+            //nuevoCliente.FchBajaCliente = Console.ReadLine();
             return nuevoCliente;
         }
 
@@ -72,8 +72,8 @@ namespace EjercicioLista3.Servicios
             nuevaCuenta.Iban = Console.ReadLine();
             Console.WriteLine("Introduzca la fecha del alta de la cuenta:");
             nuevaCuenta.FchAltaCuenta = Console.ReadLine();
-            Console.WriteLine("Introduzca la fecha de la baja de la cuenta:");
-            nuevaCuenta.FchBajaCuenta = Console.ReadLine();
+            //Console.WriteLine("Introduzca la fecha de la baja de la cuenta:");
+            //nuevaCuenta.FchBajaCuenta = Console.ReadLine();
             return nuevaCuenta;
         }
 
